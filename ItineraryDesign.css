@@ -4,7 +4,7 @@ body {
   padding: 0;
 }
 
-h1 {
+/*h1 {
   font-style: italic;
   font-size: 60px;
   font-weight: 100;
@@ -16,10 +16,17 @@ h1:after {
   position: absolute;
   bottom: 0;
   left: 0;
-  border-bottom: 1px solid #cbb46e;
+  /*border-bottom: 1px solid #cbb46e;
   width: 35%;
-}
+}*/
 
+#workDay {
+  font-style: italic;
+  font-size: 60px;
+  font-weight: 100;
+  text-align:center;
+  
+}
 h2 {
   background: #2a2b31;
   color: #ffffff;
@@ -40,7 +47,7 @@ h3 {
 .block {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: top;
   flex-wrap: wrap;
   flex-direction: row;
   background-image: url(https://images.unsplash.com/photo-1428908728789-d2de25dbd4e2?q=80&fm=jpg&s=fa68c48c66a390579ae96eff13922404);
@@ -51,6 +58,7 @@ h3 {
   flex: 0 1 50%;
   font-style: italic;
 }
+
 .block .block__item .block__inner {
   padding: 2em 3em;
 }
@@ -89,13 +97,14 @@ h3 {
   justify-content: space-around;
   align-items: center;
 }
+
 .list .list__item .list__time {
   color: #cbb46e;
-  width: 25%;
+  width: 10%;
   text-align: center;
 }
 .list .list__item .list__desc {
-  width: 60%;
+  width: 80%;
   border-bottom: 1px solid #484c56;
   color: #ffffff;
   font-size: 15px;
@@ -153,4 +162,216 @@ h3 {
   position: absolute;
   top: -8px;
   left: -3px;
+}
+
+
+/* FORMULARIO DE NUEVO CLIENTE */
+
+* {box-sizing: border-box;}
+
+/* Full-width input fields */
+input[type=text], input[type=tel] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+input[type=number]{
+    width: 30%;
+    padding: 14px 20px;
+    margin: 8px 8px;
+    float: left;
+    border: none;
+    background: #f1f1f1;
+}
+/* Add a background color when the inputs get focus */
+input[type=text]:focus, input[type=tel]:focus, input[type=number]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 50%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: right;
+  width: 25%;
+}
+
+
+
+.geoButton{
+    float: left;
+    width: 25%;
+    margin-right: 8px;
+}
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: #474e5d;
+  padding-top: 50px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* Style the horizontal ruler */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+ 
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+     width: 100%;
+  }
+}
+
+/* DataTravel */
+#container{
+	width: 100%;
+  text-align:center;
+}
+
+.whole{
+	display: inline-block;
+  
+}
+
+
+
+.type{
+	width: 300px;
+	border-radius: 5px 5px 0px 0px;
+	background-color: #eac80d;
+	height: 62px;
+	border-bottom: 3px solid #bfa30c;
+
+}
+
+.type p{
+	font-family:'Open Sans';
+    font-weight: 800;
+	font-size: 29px;
+	text-transform: uppercase;
+	color: white;
+	text-align: center;
+	padding-top: 10px;
+
+	
+
+}
+
+.plan{
+	width: 300px;
+	background-color: #2b2937;
+
+	border-radius: 0px 0px 5px 5px;
+    font-family:'Open Sans';
+    font-style:condensed;
+    font-size: 90px;
+    color: white;
+    text-align: center;
+
+
+}
+.standard{
+	background-color: #1abc9c;
+	border-bottom: 3px solid #18937b;
+}
+
+.ultimate{
+	background-color: #5d6a9a;
+	border-bottom: 3px solid #474f6f;
+}
+
+
+
+
+
+.header{
+	border-bottom: 1px solid #494a5a;
+	padding-bottom: 39px;
+
+
+}
+
+.header span{
+	font-size: 32px;
+
+	
+}
+
+.month{
+	font-size: 14px;
+	color: white;
+	padding: 0px;
+	margin: -10px;
+}
+
+.price{
+	height:80px;
 }
