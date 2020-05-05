@@ -91,7 +91,7 @@ h3 {
   margin-bottom: 3em;
 }
 .list__item {
-  float: left;
+  float: right;
   width: 100%; !important
   display: flex;
   justify-content: space-around;
