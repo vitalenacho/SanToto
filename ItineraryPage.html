@@ -14,49 +14,10 @@
         <button onclick="getConstantLocation()">Geolocalizar</button>
         <p id="demo"></p>
         <p id="destino"></p>
-
-        <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Agregar nuevo
-          Cliente</button>
-
-        <div id="id01" class="modal">
-          <span
-            onclick="document.getElementById('id01').style.display='none'; document.getElementById('clientForm').reset();"
-            class="close" title="Close Modal">&times;</span>
-          <form target="_top" class="modal-content" id="clientForm" onsubmit="getDataFromForm(); return false;">
-            <div class="container">
-              <h1>Formulario de Nuevo Cliente</h1>
-              <p>Porfavor registre todos los datos especificados del cliente</p>
-              <hr>
-              <label for="nombre"><b>Nombre</b></label>
-              <input id="clientName" type="text" placeholder="Nombre del cliente" name="nombre" required>
-
-              <label for="Tel"><b>Teléfono</b></label>
-              <input id="clientTel" type="tel" placeholder="Número de Teléfono" name="Tel" required>
-
-              <label for="Direccion"><b>Dirección</b></label>
-              <input id="clientDir" type="text" placeholder="Dirección Completa" name="Direccion" required>
-
-              <button type="submit" onclick="getLocation('cliente');" class="geoButton">Cargar Latitud y
-                Longitud</button>
-              <input id="clientLat" type="number" step="0.000000000000001" placeholder="Latitud" name="lat" required>
-              <input id="clientLon" type="number" step="0.000000000000001" placeholder="Latitud" name="lon" required>
-              <div class="clearfix">
-                <button type="submit" class="signupbtn">Registrar</button>
-                <button type="button"
-                  onclick="document.getElementById('id01').style.display='none'; document.getElementById('clientForm').reset();"
-                  class="cancelbtn">Cancel</button>
-
-              </div>
-            </div>
-          </form>
-        </div>
-
       </div>
     </div>
 
   </div>
-
-
   <div class="block__item">
     <div class="block__inner">
 
