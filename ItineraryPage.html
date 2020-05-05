@@ -6,67 +6,65 @@
 </head>
 <body>
 <div class="block">
-	<div class="block__item">
+	<div class="block__item">      
 		<div class="block__inner">
-			<h1>Lunes Mañana</h1>
 			<div class="block__description">
 				<p>Click the button to get your coordinates.</p>
-				<button onclick="getConstantLocation()">Try It</button>
+				<button onclick="getConstantLocation()">Geolocalizar</button>
 				<p id="demo"></p>
+                <p id="destino"></p>
+                
+                <!--
+                <h4> <?= "Distancia Total :"+travelData[0]+ "km" ?> </h4>
+                <h4> <?= "Duración Total :"+travelData[1]+ "hs" ?> </h4>
+                <h4> <?= "Duración Total con tráfico :"+travelData[2]+ "hs" ?> </h4>     
+                -->
+                <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Agregar nuevo Cliente</button>
+                
+                <div id="id01" class="modal">
+                  <span onclick="document.getElementById('id01').style.display='none'; document.getElementById('clientForm').reset();" class="close" title="Close Modal">&times;</span>
+                  <form target="_top" class="modal-content" id="clientForm" onsubmit="getDataFromForm(); return false;">
+                    <div class="container">
+                      <h1>Formulario de Nuevo Cliente</h1>
+                      <p>Porfavor registre todos los datos especificados del cliente</p>
+                      <hr>
+                      <label for="nombre"><b>Nombre</b></label>
+                      <input id="clientName" type="text" placeholder="Nombre del cliente" name="nombre" required>
+                
+                      <label for="Tel"><b>Teléfono</b></label>
+                      <input id="clientTel" type="tel" placeholder="Número de Teléfono" name="Tel" required>
+                
+                      <label for="Direccion"><b>Dirección</b></label>
+                      <input id="clientDir" type="text" placeholder="Dirección Completa" name="Direccion" required>
+                      
+                      <button type="submit" onclick="getLocation('cliente');" class="geoButton">Cargar Latitud y Longitud</button>
+                      <input id="clientLat" type="number" step="0.000000000000001" placeholder="Latitud" name="lat" required>
+                      <input id="clientLon" type="number" step="0.000000000000001" placeholder="Latitud" name="lon" required>
+                      <div class="clearfix">
+                        <button type="submit" class="signupbtn">Registrar</button>
+                        <button type="button" onclick="document.getElementById('id01').style.display='none'; document.getElementById('clientForm').reset();" class="cancelbtn">Cancel</button>
+                        
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                
 			</div>
 		</div>
+
 	</div>
+
+
 	<div class="block__item">
 		<div class="block__inner">
-			<h2>Itinerario</h2>
+			<h2>Itinerario </h2>
 			<div class="list">
 				<div class="list__item">
-					<div class="list__time">6:00 am</div>
+					<div class="list__time">3385</div>
 					<div class="list__border"></div>
 					<div class="list__desc">
-						<h3 onclick="window.location = 'https://www.google.com/maps/dir/Current+Location/-31.735050,-60.522094';">Departing Flight</h3>
-						<div>Southwest #80293 Gate:511<img style='vertical-align:middle;float:right;' src="https://img.icons8.com/color/48/000000/google-maps.png"></div>
-						<div>Boarding: 5:30 am Destination: Miami, FL </div>
-						<div class="border"></div>
-					</div>
-				</div>
-				<div class="list__item">
-					<div class="list__time">8:00 am</div>
-					<div class="list__border"></div>
-					<div class="list__desc">
-						<h3 onclick=getLocation()>Enterprise Car Rental</h3>
-						<div>940 NW 27th Ave, Miami, FL 33125 <img style='vertical-align:middle;float:right;' src="https://img.icons8.com/color/48/000000/google-maps.png"></div>
-						<div>Pick up: 8:00 am</div>
-						<div class="border"></div>
-					</div>
-				</div>
-				<div class="list__item">
-					<div class="list__time">2:00 pm</div>
-					<div class="list__border"></div>
-					<div class="list__desc">
-						<h3>The Savoy</h3>
-						<div>425 Ocean Drive, Miami Beach, FL 33139 <img style='vertical-align:middle;float:right;' src="https://img.icons8.com/color/48/000000/google-maps.png"></div>
-						<div>Check-in: 2:00 pm</div>
-						<div class="border"></div>
-					</div>
-				</div>
-				<div class="list__item">
-					<div class="list__time">7:00 pm</div>
-					<div class="list__border"></div>
-					<div class="list__desc">
-						<h3>Events</h3>
-						<div>Motley Crue American Airlines Arena <img style='vertical-align:middle;float:right;' src="https://img.icons8.com/color/48/000000/google-maps.png"></div>
-						<div>Showtime: 7:00 pm</div>
-						<div class="border"></div>
-					</div>
-				</div>
-				<div class="list__item">
-					<div class="list__time">12:00 am</div>
-					<div class="list__border"></div>
-					<div class="list__desc">
-						<h3>Returning Flight</h3>
-						<div>Southwest #80293 Gate: 515 <img style='vertical-align:middle;float:right;' src="https://img.icons8.com/color/48/000000/google-maps.png"></div>
-						<div>Boarding: 11:00 am Destination: Denver, CO</div>
+						<h3>Luciana <img style='vertical-align:middle;float:right;' src="https://img.icons8.com/color/48/000000/google-maps.png" data-lanLon="-31.664512, -60.76803"onclick="getLocation(this.getAttribute('data-lanLon'))" ></h3>
+						<div >Cordoba 2001 </div>
 						<div class="border"></div>
 					</div>
 				</div>
@@ -75,5 +73,6 @@
 	</div>
 </div>
 <script src="geolocation.js"></script>
+<script src="PopUp.js"></script>
 </body>
 </html>
