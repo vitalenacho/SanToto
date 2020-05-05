@@ -90,15 +90,15 @@ h3 {
   padding: 1.5em 0;
   margin-bottom: 3em;
 }
-.list .list__item {
+.list__item {
   float: left;
-  width: 100%;
+  width: 100%; !important
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
-.list .list__item .list__time {
+.list__time {
   color: #cbb46e;
   width: 10%;
   text-align: center;
