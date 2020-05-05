@@ -5,41 +5,81 @@
 <link rel="stylesheet" href="ItineraryDesign.css">
 </head>
 <body>
+  
+  
 <div class="block">
-  <div class="block__item">
-
-    <div class="block__inner">
-      <div class="block__description">
-        <p>Click the button to get your coordinates.</p>
-        <button onclick="getConstantLocation()">Geolocalizar</button>
+	<div class="block__item">
+		<div class="block__inner">
+			<h1>Lunes Mañana</h1>
+			<div class="block__description">
         <p id="demo"></p>
         <p id="destino"></p>
-      </div>
-    </div>
-
-  </div>
-  <div class="block__item">
-    <div class="block__inner">
-
-      <h2>Itinerario </h2>
-      <div class="list">
-        <div class="list__item">
+			</div>
+		</div>
+	</div>
+	<div class="block__item">
+		<div class="block__inner">
+			<h2>Travel Itinerary</h2>
+			<div class="list">
+				<div class="list__item">
           <div class="list__time">3385</div>
           <div class="list__border"></div>
           <div class="list__desc">
             <h3>Luciana
-            </h3>
-            <img style='vertical-align:middle;float:right;'
+              <img style='vertical-align:middle;float:right;'
                 src="https://img.icons8.com/color/48/000000/google-maps.png"
                 data-lanLon="-31.664512,-60.76803" onclick="getLocation(this.getAttribute('data-lanLon'))">
+            </h3>
+
             <div>Cordoba 2001</div>
             <div class="border"></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+					</div>
+				</div>
+				<div class="list__item">
+					<div class="list__time">8:00 am</div>
+					<div class="list__border"></div>
+					<div class="list__desc">
+						<h3>Enterprise Car Rental</h3>
+						<div>940 NW 27th Ave, Miami, FL 33125</div>
+						<div>Pick up: 8:00 am</div>
+						<div class="border"></div>
+					</div>
+				</div>
+				<div class="list__item">
+					<div class="list__time">2:00 pm</div>
+					<div class="list__border"></div>
+					<div class="list__desc">
+						<h3>The Savoy</h3>
+						<div>425 Ocean Drive, Miami Beach, FL 33139</div>
+						<div>Check-in: 2:00 pm</div>
+						<div class="border"></div>
+					</div>
+				</div>
+				<div class="list__item">
+					<div class="list__time">7:00 pm</div>
+					<div class="list__border"></div>
+					<div class="list__desc">
+						<h3>Events</h3>
+						<div>Motley Crue American Airlines Arena</div>
+						<div>Showtime: 7:00 pm</div>
+						<div class="border"></div>
+					</div>
+				</div>
+				<div class="list__item">
+					<div class="list__time">12:00 am</div>
+					<div class="list__border"></div>
+					<div class="list__desc">
+						<h3>Returning Flight</h3>
+						<div>Southwest #80293 Gate: 515</div>
+						<div>Boarding: 11:00 am Destination: Denver, CO</div>
+						<div class="border"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </div>
+
 <script src="geolocation.js"></script>
 </body>
 </html>
