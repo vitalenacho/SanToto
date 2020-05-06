@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="ItineraryDesign.css">
+</head>
+
+<body>
+
+
+  <div class="block">
+    <div class="block__item">
+      <div class="block__inner">
+        <h1>Martes | Viernes</h1>
+        <div class="block__description">
+          <p id="demo"></p>
+          <p id="destino"></p>
+        </div>
+      </div>
+    </div>
+    <div class="block__item">
+      <div class="block__inner">
+        <h2>Itinerario del día</h2>
+        <div class="list">
+          <div class="list__item">
+            <div class="list__time">3385</div>
+            <div class="list__border"></div>
+            <div class="list__desc">
+              <h3>Cordoba 2001 <img style="vertical-align:middle;float:right;"
+                  src="https://img.icons8.com/color/48/000000/google-maps.png" data-lanlon="-31.664512,-60.76803"
+                  onclick="getLocation(this.getAttribute('data-lanLon'))"></h3>
+              <div>Cliente: Luciana </div>
+              <div class="border"></div>
+            </div>
+          </div>
+          <div class="list__item">
+            <div class="list__time">3348</div>
+            <div class="list__border"></div>
+            <div class="list__desc">
+              <h3>Moreno 1288 <img style="vertical-align:middle;float:right;"
+                  src="https://img.icons8.com/color/48/000000/google-maps.png" data-lanlon="-31.6584207,-60.7644084"
+                  onclick="getLocation(this.getAttribute('data-lanLon'))"></h3>
+              <div>Cliente: Claudio </div>
+              <div class="border"></div>
+            </div>
+          </div>
+          <div class="list__item">
+            <div class="list__time">3364</div>
+            <div class="list__border"></div>
+            <div class="list__desc">
+              <h3>Cordoba 1251 <img style="vertical-align:middle;float:right;"
+                  src="https://img.icons8.com/color/48/000000/google-maps.png" data-lanlon="-31.6570393,-60.7668974"
+                  onclick="getLocation(this.getAttribute('data-lanLon'))"></h3>
+              <div>Cliente: Emilio </div>
+              <div class="border"></div>
+            </div>
+          </div>
+          <div class="list__item">
+            <div class="list__time">3363</div>
+            <div class="list__border"></div>
+            <div class="list__desc">
+              <h3>Cordoba 1279 <img style="vertical-align:middle;float:right;"
+                  src="https://img.icons8.com/color/48/000000/google-maps.png" data-lanlon="-31.65732,-60.76689"
+                  onclick="getLocation(this.getAttribute('data-lanLon'))"></h3>
+              <div>Cliente: Estela </div>
+              <div class="border"></div>
+            </div>
+          </div>
+          <div class="list__item">
+            <div class="list__time">3366</div>
+            <div class="list__border"></div>
+            <div class="list__desc">
+              <h3>R Saenz Peña 3360 <img style="vertical-align:middle;float:right;"
+                  src="https://img.icons8.com/color/48/000000/google-maps.png" data-lanlon="-31.6552106,-60.776492"
+                  onclick="getLocation(this.getAttribute('data-lanLon'))"></h3>
+              <div>Cliente: Ruben </div>
+              <div class="border"></div>
+            </div>
+          </div>
+          <div class="list__item">
+            <div class="list__time">3352</div>
+            <div class="list__border"></div>
+            <div class="list__desc">
+              <h3>Sarmiento 2875 <img style="vertical-align:middle;float:right;"
+                  src="https://img.icons8.com/color/48/000000/google-maps.png" data-lanlon="-31.6604117,-60.7704131"
+                  onclick="getLocation(this.getAttribute('data-lanLon'))"></h3>
+              <div>Cliente: Silvia </div>
+              <div class="border"></div>
+            </div>
+          </div>
+          <div class="list__item">
+            <div class="list__time">3384</div>
+            <div class="list__border"></div>
+            <div class="list__desc">
+              <h3>Crespo 1978 <img style="vertical-align:middle;float:right;"
+                  src="https://img.icons8.com/color/48/000000/google-maps.png" data-lanlon="-31.663811,-60.771339"
+                  onclick="getLocation(this.getAttribute('data-lanLon'))"></h3>
+              <div>Cliente: Lorena </div>
+              <div class="border"></div>
+            </div>
+          </div>
+          <div class="list__item">
+            <div class="list__time">3351</div>
+            <div class="list__border"></div>
+            <div class="list__desc">
+              <h3>Crespo 2034 <img style="vertical-align:middle;float:right;"
+                  src="https://img.icons8.com/color/48/000000/google-maps.png" data-lanlon="-31.6645357,-60.7713773"
+                  onclick="getLocation(this.getAttribute('data-lanLon'))"></h3>
+              <div>Cliente: Silvana </div>
+              <div class="border"></div>
+            </div>
+          </div>
+          <div class="list__item">
+            <div class="list__time">3353</div>
+            <div class="list__border"></div>
+            <div class="list__desc">
+              <h3>Gorostia y 9djulio <img style="vertical-align:middle;float:right;"
+                  src="https://img.icons8.com/color/48/000000/google-maps.png" data-lanlon="-31.6652244,-60.7781312"
+                  onclick="getLocation(this.getAttribute('data-lanLon'))"></h3>
+              <div>Cliente: Graciela </div>
+              <div class="border"></div>
+            </div>
+          </div>
+          <div class="list__item">
+            <div class="list__time">3349</div>
+            <div class="list__border"></div>
+            <div class="list__desc">
+              <h3>C Colon 3575 <img style="vertical-align:middle;float:right;"
+                  src="https://img.icons8.com/color/48/000000/google-maps.png" data-lanlon="-31.6667052,-60.7769787"
+                  onclick="getLocation(this.getAttribute('data-lanLon'))"></h3>
+              <div>Cliente: Lucia </div>
+              <div class="border"></div>
+            </div>
+          </div>
+          <div class="list__item">
+            <div class="list__time">3365</div>
+            <div class="list__border"></div>
+            <div class="list__desc">
+              <h3>J J Paso 2323 <img style="vertical-align:middle;float:right;"
+                  src="https://img.icons8.com/color/48/000000/google-maps.png" data-lanlon="-31.6668014,-60.7761696"
+                  onclick="getLocation(this.getAttribute('data-lanLon'))"></h3>
+              <div>Cliente: Narela </div>
+              <div class="border"></div>
+            </div>
+          </div>
+          <div class="list__item">
+            <div class="list__time">3350</div>
+            <div class="list__border"></div>
+            <div class="list__desc">
+              <h3>Azcuenagay9djulio <img style="vertical-align:middle;float:right;"
+                  src="https://img.icons8.com/color/48/000000/google-maps.png" data-lanlon="-31.6662843,-60.7739642"
+                  onclick="getLocation(this.getAttribute('data-lanLon'))"></h3>
+              <div>Cliente: Eli </div>
+              <div class="border"></div>
+            </div>
+          </div>
+          <div class="list__item">
+            <div class="list__time">3375</div>
+            <div class="list__border"></div>
+            <div class="list__desc">
+              <h3>Centenario 2878 <img style="vertical-align:middle;float:right;"
+                  src="https://img.icons8.com/color/48/000000/google-maps.png" data-lanlon="-31.6746356,-60.7642522"
+                  onclick="getLocation(this.getAttribute('data-lanLon'))"></h3>
+              <div>Cliente: Carla </div>
+              <div class="border"></div>
+            </div>
+          </div>
+          <div class="list__item">
+            <div class="list__time">3371</div>
+            <div class="list__border"></div>
+            <div class="list__desc">
+              <h3>H Irigoyen y 12sept <img style="vertical-align:middle;float:right;"
+                  src="https://img.icons8.com/color/48/000000/google-maps.png" data-lanlon="-31.6773807,-60.7655649"
+                  onclick="getLocation(this.getAttribute('data-lanLon'))"></h3>
+              <div>Cliente: Sebastian </div>
+              <div class="border"></div>
+            </div>
+          </div>
+          <div class="list__item">
+            <div class="list__time">3370</div>
+            <div class="list__border"></div>
+            <div class="list__desc">
+              <h3>H Irigoyen 3810 <img style="vertical-align:middle;float:right;"
+                  src="https://img.icons8.com/color/48/000000/google-maps.png" data-lanlon="-31.6831026,-60.7663561"
+                  onclick="getLocation(this.getAttribute('data-lanLon'))"></h3>
+              <div>Cliente: Perez </div>
+              <div class="border"></div>
+            </div>
+          </div>
+          <div class="list__item">
+            <div class="list__time">3376</div>
+            <div class="list__border"></div>
+            <div class="list__desc">
+              <h3>H Irigoyen 3965 <img style="vertical-align:middle;float:right;"
+                  src="https://img.icons8.com/color/48/000000/google-maps.png" data-lanlon="-31.6845639,-60.7667409"
+                  onclick="getLocation(this.getAttribute('data-lanLon'))"></h3>
+              <div>Cliente: Flavia </div>
+              <div class="border"></div>
+            </div>
+          </div>
+          <div class="list__item">
+            <div class="list__time">3374</div>
+            <div class="list__border"></div>
+            <div class="list__desc">
+              <h3>Frutos 1436 <img style="vertical-align:middle;float:right;"
+                  src="https://img.icons8.com/color/48/000000/google-maps.png" data-lanlon="-31.6856448,-60.7592563"
+                  onclick="getLocation(this.getAttribute('data-lanLon'))"></h3>
+              <div>Cliente: Sergio </div>
+              <div class="border"></div>
+            </div>
+          </div>
+          <div class="list__item">
+            <div class="list__time">3377</div>
+            <div class="list__border"></div>
+            <div class="list__desc">
+              <h3>Candiotti 4960 <img style="vertical-align:middle;float:right;"
+                  src="https://img.icons8.com/color/48/000000/google-maps.png" data-lanlon="-31.6990199,-60.7611393"
+                  onclick="getLocation(this.getAttribute('data-lanLon'))"></h3>
+              <div>Cliente: Mariela </div>
+              <div class="border"></div>
+            </div>
+          </div>
+          <div class="list__item">
+            <div class="list__time">3369</div>
+            <div class="list__border"></div>
+            <div class="list__desc">
+              <h3>M Candiotti 2880 <img style="vertical-align:middle;float:right;"
+                  src="https://img.icons8.com/color/48/000000/google-maps.png" data-lanlon="-31.6759217,-60.756134"
+                  onclick="getLocation(this.getAttribute('data-lanLon'))"></h3>
+              <div>Cliente: Pablo </div>
+              <div class="border"></div>
+            </div>
+          </div>
+          <div class="list__item">
+            <div class="list__time">3391</div>
+            <div class="list__border"></div>
+            <div class="list__desc">
+              <h3>M candiotti 2715 <img style="vertical-align:middle;float:right;"
+                  src="https://img.icons8.com/color/48/000000/google-maps.png" data-lanlon="-31.674072,-60.755743"
+                  onclick="getLocation(this.getAttribute('data-lanLon'))"></h3>
+              <div>Cliente: Autoservicio </div>
+              <div class="border"></div>
+            </div>
+          </div>
+          <div class="list__item">
+            <div class="list__time">3368</div>
+            <div class="list__border"></div>
+            <div class="list__desc">
+              <h3>M Candiotti 2380 <img style="vertical-align:middle;float:right;"
+                  src="https://img.icons8.com/color/48/000000/google-maps.png" data-lanlon="-31.6706251,-60.7551669"
+                  onclick="getLocation(this.getAttribute('data-lanLon'))"></h3>
+              <div>Cliente: Ricardo </div>
+              <div class="border"></div>
+            </div>
+          </div>
+          <div class="list__item">
+            <div class="list__time">3367</div>
+            <div class="list__border"></div>
+            <div class="list__desc">
+              <h3>Salta <img style="vertical-align:middle;float:right;"
+                  src="https://img.icons8.com/color/48/000000/google-maps.png" data-lanlon="-31.6703728,-60.7549939"
+                  onclick="getLocation(this.getAttribute('data-lanLon'))"></h3>
+              <div>Cliente: Monzon </div>
+              <div class="border"></div>
+            </div>
+          </div>
+          <div class="list__item">
+            <div class="list__time">3390</div>
+            <div class="list__border"></div>
+            <div class="list__desc">
+              <h3>Av freyre 1244 <img style="vertical-align:middle;float:right;"
+                  src="https://img.icons8.com/color/48/000000/google-maps.png" data-lanlon="-31.658575,-60.722453"
+                  onclick="getLocation(this.getAttribute('data-lanLon'))"></h3>
+              <div>Cliente: Maria </div>
+              <div class="border"></div>
+            </div>
+          </div>
+          <div class="list__item">
+            <div class="list__time">3386</div>
+            <div class="list__border"></div>
+            <div class="list__desc">
+              <h3>Entre Rios 4107 <img style="vertical-align:middle;float:right;"
+                  src="https://img.icons8.com/color/48/000000/google-maps.png" data-lanlon="-31.65648,-60.7303"
+                  onclick="getLocation(this.getAttribute('data-lanLon'))"></h3>
+              <div>Cliente: Paola </div>
+              <div class="border"></div>
+            </div>
+          </div>
+          <div class="list__item">
+            <div class="list__time">3387</div>
+            <div class="list__border"></div>
+            <div class="list__desc">
+              <h3>Amenabar y lamadrid <img style="vertical-align:middle;float:right;"
+                  src="https://img.icons8.com/color/48/000000/google-maps.png" data-lanlon="-31.65566,-60.73115"
+                  onclick="getLocation(this.getAttribute('data-lanLon'))"></h3>
+              <div>Cliente: Cecilia </div>
+              <div class="border"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="geolocation.js"></script>
+</body>
+
+</html>
